@@ -16,6 +16,8 @@ namespace MyProgram {
             int y;
             double result;
 
+        // Try block is needed because it may throw an exception 
+        // in this particuliar code we can get several exceptions like FormatException 
            try {
                Console.WriteLine("LETS DIVIDE!");
 
@@ -31,6 +33,9 @@ namespace MyProgram {
 
                Console.WriteLine("Answer is " + result);
            }  
+            // catch clause is needed because Exception can terminate your app if it doesn’t catches the exception 
+
+
         //    This format exception will handle any exception that isnt an integer
            catch (FormatException e)
            {
